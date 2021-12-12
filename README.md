@@ -231,9 +231,9 @@ relaod wasm
 egctl wasm reload-code
 ```
 
+you can find the code from https://github.com/megaease/easegress-assemblyscript-sdk/tree/main/examples/flashsale
 
-
-help link:
+help links:
 
 https://github.com/megaease/easegress-assemblyscript-sdk
 
@@ -245,5 +245,6 @@ author help video and weixin page,but you should copy from the page, bucause pag
 
 https://www.youtube.com/watch?v=InPc5aIAu_o&t=1459s
 
-https://mp.weixin.qq.com/s/VsIm6bdgoYvEJL_UsqGLcg
+https://megaease.com/zh/blog/2021/09/08/how-to-do-an-online-flash-sale-event-with-easegress-and-webassembly/
 
+https://github.com/megaease/easegress/blob/main/doc/cookbook/flash-sale.md
