@@ -1,0 +1,9 @@
+kind: HTTPServer
+name: http-server
+port: 10080
+keepAlive: true
+https: false
+rules:
+- paths:
+  - pathPrefix: /flashsale
+    backend: flash-sale-pipeline

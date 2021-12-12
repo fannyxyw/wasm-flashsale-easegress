@@ -1,0 +1,16 @@
+name: flash-sale-pipeline
+kind: HTTPPipeline
+flow:
+  - filter: wasm
+  - filter: mock
+filters:
+  - name: wasm
+    kind: WasmHost
+    maxConcurrency: 2
+    code: /home/shidf/dev/wasm-hello/build/optimized.wasm
+    timeout: 100ms
+  - name: mock
+    kind: Mock
+    rules:
+      - body: "You can buy the laptop for $1 now.\n"
+        code: 200
