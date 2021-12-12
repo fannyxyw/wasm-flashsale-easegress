@@ -224,3 +224,26 @@ Flags:
 
 Use "egctl [command] --help" for more information about a command.
 ```
+
+relaod wasm
+
+```
+egctl wasm reload-code
+```
+
+
+
+help link:
+
+https://github.com/megaease/easegress-assemblyscript-sdk
+
+https://github.com/megaease/easegress
+
+
+
+author help video and weixin page,but you should copy from the page, bucause page lose whitespace
+
+https://www.youtube.com/watch?v=InPc5aIAu_o&t=1459s
+
+https://mp.weixin.qq.com/s/VsIm6bdgoYvEJL_UsqGLcg
+
