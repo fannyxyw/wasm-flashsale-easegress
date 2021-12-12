@@ -1,7 +1,7 @@
 {
   "name": "wasm-hello",
   "version": "1.0.0",
-  "description": "",
+  "description": "# Easegress AssemblyScript SDK",
   "main": "index.js",
   "scripts": {
     "test": "node tests",
@@ -16,5 +16,16 @@
   },
   "devDependencies": {
     "assemblyscript": "^0.19.21"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fannyxyw/easegress-wasm-flashsale.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fannyxyw/easegress-wasm-flashsale/issues"
+  },
+  "homepage": "https://github.com/fannyxyw/easegress-wasm-flashsale#readme"
 }

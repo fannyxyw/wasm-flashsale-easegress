@@ -1,0 +1,8 @@
+clusterMembers:
+- id: 7538523430551260010
+  name: eg-default-name
+  peerURL: http://localhost:2380
+knownMembers:
+- id: 7538523430551260010
+  name: eg-default-name
+  peerURL: http://localhost:2380

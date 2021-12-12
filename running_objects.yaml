@@ -1,0 +1,45 @@
+# 2021-12-12T15:42:43+08:00
+flash-sale-pipeline: |
+  filters:
+  - code: /home/shidf/dev/easegress-wasm-flashsale/build/optimized.wasm
+    kind: WasmHost
+    maxConcurrency: 2
+    name: wasm
+    timeout: 100ms
+  - kind: Mock
+    name: mock
+    rules:
+    - body: |
+        You can buy the laptop for $1 now.
+      code: 200
+  flow:
+  - filter: wasm
+    jumpIf: {}
+  - filter: mock
+    jumpIf: {}
+  kind: HTTPPipeline
+  name: flash-sale-pipeline
+http-server: |
+  cacheSize: 0
+  certBase64: ""
+  certs: {}
+  http3: false
+  https: false
+  keepAlive: true
+  keepAliveTimeout: 60s
+  keyBase64: ""
+  keys: {}
+  kind: HTTPServer
+  maxConnections: 10240
+  name: http-server
+  port: 10080
+  rules:
+  - host: ""
+    hostRegexp: ""
+    paths:
+    - backend: flash-sale-pipeline
+      headers: []
+      pathPrefix: /flashsale
+      rewriteTarget: ""
+  tracing: null
+  xForwardedFor: false

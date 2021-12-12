@@ -7,7 +7,7 @@ filters:
   - name: wasm
     kind: WasmHost
     maxConcurrency: 2
-    code: /home/shidf/dev/wasm-hello/build/optimized.wasm
+    code: /home/shidf/dev/easegress-wasm-flashsale/build/optimized.wasm
     timeout: 100ms
   - name: mock
     kind: Mock
