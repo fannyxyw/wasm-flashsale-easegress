@@ -241,7 +241,7 @@ https://github.com/megaease/easegress
 
 
 
-author help video and weixin page,but you should copy from the page, bucause page lose whitespace
+author help video
 
 https://www.youtube.com/watch?v=InPc5aIAu_o&t=1459s
 
